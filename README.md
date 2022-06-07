@@ -45,3 +45,6 @@ actions = these are funcs that returns objects with a type and an optional paylo
             payload:number
         })
     }
+
+https://react-redux.js.org/introduction/getting-started
+https://react-redux.js.org/tutorials/quick-start
