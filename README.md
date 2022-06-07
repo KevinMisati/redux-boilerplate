@@ -1,6 +1,6 @@
 Store = we use the createStore API imported from redux, it is used to store all the state of the app
-    const store = createStore(reducer,optional redux devtools)
 
+    const store = createStore(reducer,optional redux devtools)
 
 reducers = they are functions that takes in two arguments: the initial state and the actions.They alter the state depending on the dispatched action. Reducers can be combined by the combineReducers API.
 
@@ -39,9 +39,9 @@ actions = these are funcs that returns objects with a type and an optional paylo
         })
     }
 
-    export const increment5 = (nr) => {
+    export const increment5 = (number) => {
         return ({
             type: "INCREMENT5",
-            payload:nr
+            payload:number
         })
     }
