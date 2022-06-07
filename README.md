@@ -4,18 +4,18 @@ Store = we use the createStore API imported from redux, it is used to store all 
 
 reducers = they are functions that takes in two arguments: the initial state and the actions.They alter the state depending on the dispatched action. Reducers can be combined by the combineReducers API.
 
-const counterReducer = (state = 0, action) => {
-    switch(action.type){
-        case "INCREMENT":
-            return state + 1
-        case "DECREMENT":
-            return state - 1
-        case "INCREMENT5":
-            return state + action.payload
-        default:
-            return state
+    const counterReducer = (state = 0, action) => {
+        switch(action.type){
+            case "INCREMENT":
+                return state + 1
+            case "DECREMENT":
+                return state - 1
+            case "INCREMENT5":
+                return state + action.payload
+            default:
+                return state
+        }
     }
-}
 
 combine reducers
 
